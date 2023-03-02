@@ -1,0 +1,15 @@
+<header>
+    <nav *ngIf="user" >
+        <ul>
+            <li>
+                <a routerLink="/home">Home</a>
+            </li>
+            <li>
+                <app-session-button />
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="root">
+    <router-outlet></router-outlet>
+</main>

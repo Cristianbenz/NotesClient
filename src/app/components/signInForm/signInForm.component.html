@@ -1,0 +1,25 @@
+<h2>SIGN IN</h2>
+<form
+  mat-form
+  class="signIn-form"
+  [formGroup]="loginForm"
+  (ngSubmit)="authenticate()"
+>
+  <div>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" [disabled]="!loginForm.valid">
+      Sign In
+    </button>
+  </div>
+</form>

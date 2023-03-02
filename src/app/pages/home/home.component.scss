@@ -1,0 +1,21 @@
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}

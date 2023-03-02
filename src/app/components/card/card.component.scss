@@ -1,0 +1,17 @@
+.note-card {
+    min-width: 200px;
+    max-width: 400px;
+    background-color: rgb(231, 231, 185);
+}
+
+.note-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 13px;
+}
+
+.card-action {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,22 @@
+<div class="main-container">
+    <section class="description">
+        <h1>Welcome to Cbnez's Notes!</h1>
+        <p>
+            It is a web application made with Angular for the client 
+            and C# ASP .NET for the web service.
+        </p>
+        <span>
+            More
+            <a href="http://www.github.com/Cristianbenz" target="_self" >Projects</a>
+        </span>
+    </section>
+    <section class="container">
+        <app-signIn-form *ngIf="formType === 'signin'" />
+        <app-signUp-form *ngIf="formType === 'signup'" />
+        <p class="changeForm-button" (click)="changeForm()" >
+            Or
+            <span *ngIf="formType === 'signin'">Sign Up</span>
+            <span *ngIf="formType === 'signup'">Sign In</span>
+        </p>
+    </section>
+</div>

@@ -1,0 +1,18 @@
+<mat-card class="note-card">
+    <mat-card-title>
+        <h2>{{ note.title }}</h2>
+    </mat-card-title>
+    <mat-card-content>
+        <span><b>Content</b></span>
+        <p>{{ note.text }}</p>
+        <span><b>Status</b></span>
+        <p>{{note.statusType}}</p>
+    </mat-card-content>
+    <div class="card-action">
+        <mat-card-actions>
+            <button mat-icon-button (click)="openForm(note)">
+                <mat-icon>edit</mat-icon>
+            </button>
+        </mat-card-actions>
+    </div>
+</mat-card>

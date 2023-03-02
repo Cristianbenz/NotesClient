@@ -1,0 +1,37 @@
+<h2>SIGN UP</h2>
+<form
+  mat-form
+  class="signUp-form"
+  [formGroup]="signUpForm"
+  (ngSubmit)="signUp()"
+>
+  <div>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input type="ematextil" matInput formControlName="name" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Confirm Password</mat-label>
+      <input type="password" matInput formControlName="confirmPassword" />
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-raised-button color="primary" [disabled]="!signUpForm.valid">
+      Sign Up
+    </button>
+  </div>
+</form>

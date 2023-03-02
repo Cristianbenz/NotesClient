@@ -1,0 +1,12 @@
+<h1>Your Notes</h1>
+<section class="notes-section" >
+    <button mat-fab color="primary" (click)="addNote()">
+        <mat-icon>add</mat-icon>
+    </button>
+    <ul *ngIf="notesList.length" class="cards-list">
+        <li *ngFor="let note of notesList">
+            <app-card [note]="note" />
+        </li>
+    </ul>
+    <p *ngIf="!notesList.length">No hay notas</p>
+</section>
